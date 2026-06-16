@@ -66,12 +66,6 @@ const engagementModels = [
   },
 ];
 
-const techStack = [
-  { category: 'Frontend', items: ['React / Next.js', 'TypeScript', 'Tailwind CSS', 'Framer Motion'] },
-  { category: 'Backend', items: ['Node.js', 'Python', 'PostgreSQL', 'REST & GraphQL'] },
-  { category: 'Commerce', items: ['Shopify Plus', 'Stripe', 'Custom checkout', 'Inventory systems'] },
-  { category: 'Infrastructure', items: ['Vercel / AWS', 'CDN optimization', 'CI/CD pipelines', 'Monitoring'] },
-];
 
 const DigitalCommercePage = () => {
   return (
@@ -227,29 +221,6 @@ const DigitalCommercePage = () => {
         </div>
       </section>
 
-      {/* Tech Stack */}
-      <section className="section bg-white">
-        <div className="container-custom">
-          <SectionHeading
-            title="Technology Stack"
-            subtitle="We build with modern, battle-tested technologies optimized for performance and scale."
-            center={true}
-          />
-
-          <div className="grid grid-cols-2 md:grid-cols-4 gap-6 mt-12">
-            {techStack.map((stack, index) => (
-              <div key={index} className="bg-gray-50 rounded-xl p-6 border border-gray-100">
-                <h3 className="text-sm font-bold text-navy-900 mb-4 uppercase tracking-wider">{stack.category}</h3>
-                <ul className="space-y-2">
-                  {stack.items.map((item, i) => (
-                    <li key={i} className="text-gray-600 text-sm">{item}</li>
-                  ))}
-                </ul>
-              </div>
-            ))}
-          </div>
-        </div>
-      </section>
 
       {/* Results */}
       <section className="section bg-navy-900 text-white">
