@@ -17,6 +17,8 @@ import IndustriesPage from './pages/IndustriesPage';
 import AboutPage from './pages/AboutPage';
 import ResourcesPage from './pages/ResourcesPage';
 import ContactPage from './pages/ContactPage';
+import PrivacyPage from './pages/PrivacyPage';
+import TermsPage from './pages/TermsPage';
 
 function App() {
   const location = useLocation();
@@ -35,6 +37,8 @@ function App() {
       '/about': 'About | Stunmark',
       '/resources': 'Journal | Stunmark',
       '/contact': 'Contact | Stunmark',
+      '/privacy': 'Privacy Policy | Stunmark',
+      '/terms': 'Terms of Service | Stunmark',
     };
 
     document.title = pageTitles[location.pathname] || 'Stunmark';
@@ -58,6 +62,8 @@ function App() {
           <Route path="/about" element={<AboutPage />} />
           <Route path="/resources" element={<ResourcesPage />} />
           <Route path="/contact" element={<ContactPage />} />
+          <Route path="/privacy" element={<PrivacyPage />} />
+          <Route path="/terms" element={<TermsPage />} />
         </Routes>
       </main>
       <Footer />

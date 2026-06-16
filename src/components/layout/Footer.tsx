@@ -111,10 +111,10 @@ const Footer = () => {
           <div>
             <h4 className="text-lg font-semibold mb-6 text-white">Contact</h4>
             <ul className="space-y-3 text-gray-300">
-              <li>1234 Innovation Drive</li>
-              <li>San Francisco, CA 94107</li>
+              <li>Kaduna State</li>
+              <li>Nigeria</li>
               <li className="pt-2">studio@stunmark.com</li>
-              <li>+1 (555) 123-7868</li>
+              <li>+234 (0) 705 834 3078</li>
             </ul>
           </div>
         </div>

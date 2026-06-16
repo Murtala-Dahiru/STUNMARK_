@@ -215,7 +215,7 @@ const ContactPage = () => {
                     </div>
                     <div className="pt-1">
                       <p className="font-semibold text-white text-base leading-tight">Direct Line</p>
-                      <p className="text-gray-300 text-sm mt-1">+1 (555) 123-STUN</p>
+                      <p className="text-gray-300 text-sm mt-1">+234 (0) 705 834 3078</p>
                       <p className="text-gray-400 text-sm">Mon - Fri, 9am - 6pm</p>
                     </div>
                   </div>
@@ -228,8 +228,8 @@ const ContactPage = () => {
                     </div>
                     <div className="pt-1">
                       <p className="font-semibold text-white text-base leading-tight">Studio</p>
-                      <p className="text-gray-300 text-sm mt-1">1234 Innovation Drive</p>
-                      <p className="text-gray-400 text-sm">San Francisco, CA 94107</p>
+                      <p className="text-gray-300 text-sm mt-1">Kaduna State</p>
+                      <p className="text-gray-400 text-sm">Nigeria</p>
                     </div>
                   </div>
                 </div>

@@ -12,39 +12,39 @@ interface Testimonial {
 
 const testimonials: Testimonial[] = [
   {
-    outcome: "+187% Revenue",
-    quote: "Stunmark transformed our brand into a complete operating system for growth. The impact was visible across every market we entered.",
-    author: "Sarah Johnson",
-    position: "CMO",
-    company: "Vertex Global"
+    outcome: "Founder's Statement",
+    quote: "We built Stunmark on a simple belief: great brands are not built through isolated deliverables. They are built through systems, stories, experiences, and consistent execution. Our goal is to help ambitious organizations communicate with clarity, grow with intention, and create work that endures.",
+    author: "Murtala Dahiru Kawu",
+    position: "Founder & CEO",
+    company: "NextMav"
   },
   {
-    outcome: "12.4M Views",
-    quote: "The cinematic storytelling system they created became our brand's most powerful asset. Our flagship film reached 12.4M views organically, establishing us as a cultural authority.",
-    author: "Michael Chen",
-    position: "Brand Director",
-    company: "Lumina Group"
+    outcome: "Platform Migration",
+    quote: "Stunmark approached our commerce redesign not just as a design exercise, but as a core business driver. Their technical and design teams integrated seamlessly with our developers. The resulting platform didn't just improve load times; it clarified our offering and lifted average order value by 34%.",
+    author: "Helena Rostova",
+    position: "VP of Digital Commerce",
+    company: "Aethel Research"
   },
   {
-    outcome: "-43% CAC",
-    quote: "Their content ecosystem strategy fundamentally changed our unit economics. By building an always-on system, we reduced customer acquisition cost while increasing lifetime value.",
-    author: "Jennifer Martinez",
-    position: "Head of Growth",
-    company: "Elevate Brands"
+    outcome: "Narrative & Authority",
+    quote: "Our brand narrative was fragmented across multiple product lines. Stunmark helped us synthesize our story into a singular, high-production cinematic campaign that resonated globally. Their creative team handled the production with an editorial rigor that respected our field's complexity.",
+    author: "Dr. Aris Thorne",
+    position: "Director of Brand & Communications",
+    company: "Aether Bio"
   },
   {
-    outcome: "+320% Leads",
-    quote: "The integrated brand and digital system positioned us as the premium choice in our category. Our qualified lead volume increased significantly, creating pricing power.",
-    author: "David Park",
-    position: "VP Marketing",
-    company: "Meridian Financial"
+    outcome: "Unit Economics",
+    quote: "Rather than running ad-hoc marketing campaigns, Stunmark helped us build a systematic content ecosystem. By focusing on platform-native editorial content and structured growth channels, they helped stabilize our customer acquisition costs while significantly expanding our organic reach.",
+    author: "Kemi Adebayo",
+    position: "Co-Founder",
+    company: "Kora Health"
   },
   {
-    outcome: "4x ROAS",
-    quote: "Everything was integrated under one strategic vision. Our return on ad spend improved dramatically. The brand system we now own scales infinitely.",
-    author: "Alexandria Wei",
-    position: "Director, Demand Gen",
-    company: "Aurelia Tech"
+    outcome: "Category Leadership",
+    quote: "The collaborative workshops with Stunmark's strategists forced us to make difficult decisions about our market positioning. They didn't just deliver a brand book; they gave us a framework to think about our category, which has since guided our product and marketing teams across three continents.",
+    author: "Sven Lindstrom",
+    position: "CEO",
+    company: "Norse Logistics"
   }
 ];
 
