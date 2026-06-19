@@ -19,6 +19,8 @@ import ResourcesPage from './pages/ResourcesPage';
 import ContactPage from './pages/ContactPage';
 import PrivacyPage from './pages/PrivacyPage';
 import TermsPage from './pages/TermsPage';
+import CookiePolicyPage from './pages/CookiePolicyPage';
+import CookieConsent from './components/ui/CookieConsent';
 
 function App() {
   const location = useLocation();
@@ -39,6 +41,7 @@ function App() {
       '/contact': 'Contact | Stunmark',
       '/privacy': 'Privacy Policy | Stunmark',
       '/terms': 'Terms of Service | Stunmark',
+      '/cookies': 'Cookie Policy | Stunmark',
     };
 
     document.title = pageTitles[location.pathname] || 'Stunmark';
@@ -64,9 +67,11 @@ function App() {
           <Route path="/contact" element={<ContactPage />} />
           <Route path="/privacy" element={<PrivacyPage />} />
           <Route path="/terms" element={<TermsPage />} />
+          <Route path="/cookies" element={<CookiePolicyPage />} />
         </Routes>
       </main>
       <Footer />
+      <CookieConsent />
     </div>
   );
 }

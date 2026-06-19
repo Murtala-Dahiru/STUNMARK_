@@ -84,7 +84,7 @@ const CinematicProductionPage = () => {
       <section className="pt-32 pb-20 bg-gradient-to-r from-navy-900 to-black text-white relative overflow-hidden">
         <div className="absolute inset-0">
           <img
-            src="https://images.pexels.com/photos/2873489/pexels-photo-2873489.jpeg?auto=compress&cs=tinysrgb&w=1920&h=1080&dpr=2"
+            src="https://images.pexels.com/photos/3062541/pexels-photo-3062541.jpeg?auto=compress&cs=tinysrgb&w=1920&h=1080&dpr=2"
             alt="Cinematic production"
             className="w-full h-full object-cover opacity-30"
           />
@@ -277,66 +277,79 @@ const CinematicProductionPage = () => {
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 mt-12">
             <div className="group relative overflow-hidden rounded-xl">
               <img
-                src="https://images.pexels.com/photos/2873489/pexels-photo-2873489.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2"
-                alt="Brand Film"
+                src="https://images.pexels.com/photos/3183183/pexels-photo-3183183.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2"
+                alt="Brand Narrative"
                 className="w-full h-72 object-cover transition-transform duration-700 group-hover:scale-105"
               />
               <div className="absolute inset-0 bg-gradient-to-t from-navy-900/90 to-transparent flex items-end p-8">
                 <div>
-                  <p className="text-primary-400 text-sm font-semibold uppercase tracking-wider mb-2">Brand Film</p>
-                  <h3 className="text-xl font-bold text-white">Heritage Reimagined: Global Luxury House</h3>
+                  <p className="text-primary-400 text-sm font-semibold uppercase tracking-wider mb-2">Brand Narrative</p>
+                  <h3 className="text-xl font-bold text-white">Global Brand Launch Campaign</h3>
                 </div>
               </div>
             </div>
             <div className="group relative overflow-hidden rounded-xl">
               <img
                 src="https://images.pexels.com/photos/2774556/pexels-photo-2774556.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2"
-                alt="Documentary"
+                alt="Documentary Film"
                 className="w-full h-72 object-cover transition-transform duration-700 group-hover:scale-105"
               />
               <div className="absolute inset-0 bg-gradient-to-t from-navy-900/90 to-transparent flex items-end p-8">
                 <div>
-                  <p className="text-primary-400 text-sm font-semibold uppercase tracking-wider mb-2">Documentary Series</p>
-                  <h3 className="text-xl font-bold text-white">Roots & Rise: Cultural Heritage Archive</h3>
+                  <p className="text-primary-400 text-sm font-semibold uppercase tracking-wider mb-2">Documentary Film</p>
+                  <h3 className="text-xl font-bold text-white">Cultural Heritage Film Series</h3>
                 </div>
               </div>
             </div>
             <div className="group relative overflow-hidden rounded-xl">
               <img
                 src="https://images.pexels.com/photos/2510428/pexels-photo-2510428.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2"
-                alt="Product Launch"
+                alt="Commercial Film"
                 className="w-full h-72 object-cover transition-transform duration-700 group-hover:scale-105"
               />
               <div className="absolute inset-0 bg-gradient-to-t from-navy-900/90 to-transparent flex items-end p-8">
                 <div>
-                  <p className="text-primary-400 text-sm font-semibold uppercase tracking-wider mb-2">Product Launch</p>
-                  <h3 className="text-xl font-bold text-white">Velocity: Automotive Launch Campaign</h3>
+                  <p className="text-primary-400 text-sm font-semibold uppercase tracking-wider mb-2">Commercial Film</p>
+                  <h3 className="text-xl font-bold text-white">Automotive Brand Launch Campaign</h3>
                 </div>
               </div>
             </div>
             <div className="group relative overflow-hidden rounded-xl">
               <img
                 src="https://images.pexels.com/photos/3861969/pexels-photo-3861969.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2"
-                alt="Tourism Film"
+                alt="Place-Based Narrative"
                 className="w-full h-72 object-cover transition-transform duration-700 group-hover:scale-105"
               />
               <div className="absolute inset-0 bg-gradient-to-t from-navy-900/90 to-transparent flex items-end p-8">
                 <div>
-                  <p className="text-primary-400 text-sm font-semibold uppercase tracking-wider mb-2">Destination Film</p>
-                  <h3 className="text-xl font-bold text-white">Horizons: National Tourism Authority</h3>
+                  <p className="text-primary-400 text-sm font-semibold uppercase tracking-wider mb-2">Place-Based Narrative</p>
+                  <h3 className="text-xl font-bold text-white">Destination Storytelling Series</h3>
                 </div>
               </div>
             </div>
             <div className="group relative overflow-hidden rounded-xl">
               <img
                 src="https://images.pexels.com/photos/3184292/pexels-photo-3184292.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2"
-                alt="Corporate Film"
+                alt="Institutional Film"
                 className="w-full h-72 object-cover transition-transform duration-700 group-hover:scale-105"
               />
               <div className="absolute inset-0 bg-gradient-to-t from-navy-900/90 to-transparent flex items-end p-8">
                 <div>
                   <p className="text-primary-400 text-sm font-semibold uppercase tracking-wider mb-2">Institutional Film</p>
-                  <h3 className="text-xl font-bold text-white">Meridian: Vision & Values Documentary</h3>
+                  <h3 className="text-xl font-bold text-white">Executive Leadership Documentary</h3>
+                </div>
+              </div>
+            </div>
+            <div className="group relative overflow-hidden rounded-xl">
+              <img
+                src="https://images.pexels.com/photos/3379934/pexels-photo-3379934.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2"
+                alt="Product Narrative"
+                className="w-full h-72 object-cover transition-transform duration-700 group-hover:scale-105"
+              />
+              <div className="absolute inset-0 bg-gradient-to-t from-navy-900/90 to-transparent flex items-end p-8">
+                <div>
+                  <p className="text-primary-400 text-sm font-semibold uppercase tracking-wider mb-2">Product Narrative</p>
+                  <h3 className="text-xl font-bold text-white">Luxury Product Release Film</h3>
                 </div>
               </div>
             </div>

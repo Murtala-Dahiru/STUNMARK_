@@ -305,6 +305,98 @@ const GrowthPerformancePage = () => {
         subtitle="We build growth systems for brands ready to scale with precision."
         variant="dark"
       />
+      {/* Selected Work */}
+      <section className="section bg-navy-900 text-white">
+        <div className="container-custom">
+          <SectionHeading
+            title="Selected Work"
+            subtitle="Performance engines and acquisition systems engineered to scale."
+            center={true}
+            lightMode={true}
+          />
+
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 mt-12">
+            <div className="group relative overflow-hidden rounded-xl">
+              <img
+                src="https://images.pexels.com/photos/590022/pexels-photo-590022.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2"
+                alt="Paid Media"
+                className="w-full h-72 object-cover transition-transform duration-700 group-hover:scale-105"
+              />
+              <div className="absolute inset-0 bg-gradient-to-t from-navy-900/90 to-transparent flex items-end p-8">
+                <div>
+                  <p className="text-warning-400 text-sm font-semibold uppercase tracking-wider mb-2">Paid Media</p>
+                  <h3 className="text-xl font-bold text-white">Multi-Market Paid Media Scale Initiative</h3>
+                </div>
+              </div>
+            </div>
+            <div className="group relative overflow-hidden rounded-xl">
+              <img
+                src="https://images.pexels.com/photos/6476587/pexels-photo-6476587.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2"
+                alt="Growth Creative"
+                className="w-full h-72 object-cover transition-transform duration-700 group-hover:scale-105"
+              />
+              <div className="absolute inset-0 bg-gradient-to-t from-navy-900/90 to-transparent flex items-end p-8">
+                <div>
+                  <p className="text-warning-400 text-sm font-semibold uppercase tracking-wider mb-2">Growth Creative</p>
+                  <h3 className="text-xl font-bold text-white">Performance Creative Development & Testing</h3>
+                </div>
+              </div>
+            </div>
+            <div className="group relative overflow-hidden rounded-xl">
+              <img
+                src="https://images.pexels.com/photos/265087/pexels-photo-265087.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2"
+                alt="Optimization"
+                className="w-full h-72 object-cover transition-transform duration-700 group-hover:scale-105"
+              />
+              <div className="absolute inset-0 bg-gradient-to-t from-navy-900/90 to-transparent flex items-end p-8">
+                <div>
+                  <p className="text-warning-400 text-sm font-semibold uppercase tracking-wider mb-2">Optimization</p>
+                  <h3 className="text-xl font-bold text-white">Conversion Rate Optimization (CRO) Infrastructure</h3>
+                </div>
+              </div>
+            </div>
+            <div className="group relative overflow-hidden rounded-xl">
+              <img
+                src="https://images.pexels.com/photos/356079/pexels-photo-356079.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2"
+                alt="Lifecycle Marketing"
+                className="w-full h-72 object-cover transition-transform duration-700 group-hover:scale-105"
+              />
+              <div className="absolute inset-0 bg-gradient-to-t from-navy-900/90 to-transparent flex items-end p-8">
+                <div>
+                  <p className="text-warning-400 text-sm font-semibold uppercase tracking-wider mb-2">Lifecycle Marketing</p>
+                  <h3 className="text-xl font-bold text-white">Customer Lifecycle & Email Automation Program</h3>
+                </div>
+              </div>
+            </div>
+            <div className="group relative overflow-hidden rounded-xl">
+              <img
+                src="https://images.pexels.com/photos/572056/pexels-photo-572056.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2"
+                alt="Organic Acquisition"
+                className="w-full h-72 object-cover transition-transform duration-700 group-hover:scale-105"
+              />
+              <div className="absolute inset-0 bg-gradient-to-t from-navy-900/90 to-transparent flex items-end p-8">
+                <div>
+                  <p className="text-warning-400 text-sm font-semibold uppercase tracking-wider mb-2">Organic Acquisition</p>
+                  <h3 className="text-xl font-bold text-white">Sustainable Search Engine Optimization (SEO) Program</h3>
+                </div>
+              </div>
+            </div>
+            <div className="group relative overflow-hidden rounded-xl">
+              <img
+                src="https://images.pexels.com/photos/669615/pexels-photo-669615.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2"
+                alt="Growth Strategy"
+                className="w-full h-72 object-cover transition-transform duration-700 group-hover:scale-105"
+              />
+              <div className="absolute inset-0 bg-gradient-to-t from-navy-900/90 to-transparent flex items-end p-8">
+                <div>
+                  <p className="text-warning-400 text-sm font-semibold uppercase tracking-wider mb-2">Growth Strategy</p>
+                  <h3 className="text-xl font-bold text-white">Integrated Performance Marketing Transformation</h3>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
 
       {/* CTA */}
       <section className="py-24 bg-gradient-to-r from-navy-900 to-black text-white">

@@ -9,7 +9,7 @@ const HeroSection = () => {
       {/* Background image - cinematic */}
       <div className="absolute inset-0">
         <img
-          src="https://images.pexels.com/photos/2873489/pexels-photo-2873489.jpeg?auto=compress&cs=tinysrgb&w=1920&h=1080&dpr=2"
+          src="https://images.pexels.com/photos/3062541/pexels-photo-3062541.jpeg?auto=compress&cs=tinysrgb&w=1920&h=1080&dpr=2"
           alt="Cinematic production"
           className="w-full h-full object-cover opacity-40"
         />

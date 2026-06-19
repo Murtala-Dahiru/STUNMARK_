@@ -253,6 +253,99 @@ const DigitalCommercePage = () => {
         </div>
       </section>
 
+      {/* Selected Work */}
+      <section className="section bg-navy-900 text-white">
+        <div className="container-custom">
+          <SectionHeading
+            title="Selected Work"
+            subtitle="High-performance digital platforms engineered for growth."
+            center={true}
+            lightMode={true}
+          />
+
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 mt-12">
+            <div className="group relative overflow-hidden rounded-xl">
+              <img
+                src="https://images.pexels.com/photos/326503/pexels-photo-326503.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2"
+                alt="Web Experience"
+                className="w-full h-72 object-cover transition-transform duration-700 group-hover:scale-105"
+              />
+              <div className="absolute inset-0 bg-gradient-to-t from-navy-900/90 to-transparent flex items-end p-8">
+                <div>
+                  <p className="text-secondary-400 text-sm font-semibold uppercase tracking-wider mb-2">Web Experience</p>
+                  <h3 className="text-xl font-bold text-white">Institutional Web Platform</h3>
+                </div>
+              </div>
+            </div>
+            <div className="group relative overflow-hidden rounded-xl">
+              <img
+                src="https://images.pexels.com/photos/230544/pexels-photo-230544.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2"
+                alt="Ecommerce Platform"
+                className="w-full h-72 object-cover transition-transform duration-700 group-hover:scale-105"
+              />
+              <div className="absolute inset-0 bg-gradient-to-t from-navy-900/90 to-transparent flex items-end p-8">
+                <div>
+                  <p className="text-secondary-400 text-sm font-semibold uppercase tracking-wider mb-2">Ecommerce Platform</p>
+                  <h3 className="text-xl font-bold text-white">Multi-Market Ecommerce Experience</h3>
+                </div>
+              </div>
+            </div>
+            <div className="group relative overflow-hidden rounded-xl">
+              <img
+                src="https://images.pexels.com/photos/1181244/pexels-photo-1181244.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2"
+                alt="UX & Product Design"
+                className="w-full h-72 object-cover transition-transform duration-700 group-hover:scale-105"
+              />
+              <div className="absolute inset-0 bg-gradient-to-t from-navy-900/90 to-transparent flex items-end p-8">
+                <div>
+                  <p className="text-secondary-400 text-sm font-semibold uppercase tracking-wider mb-2">UX & Product Design</p>
+                  <h3 className="text-xl font-bold text-white">Design System & Experience Architecture</h3>
+                </div>
+              </div>
+            </div>
+            <div className="group relative overflow-hidden rounded-xl">
+              <img
+                src="https://images.pexels.com/photos/5076596/pexels-photo-5076596.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2"
+                alt="Omnichannel Experience"
+                className="w-full h-72 object-cover transition-transform duration-700 group-hover:scale-105"
+              />
+              <div className="absolute inset-0 bg-gradient-to-t from-navy-900/90 to-transparent flex items-end p-8">
+                <div>
+                  <p className="text-secondary-400 text-sm font-semibold uppercase tracking-wider mb-2">Omnichannel Experience</p>
+                  <h3 className="text-xl font-bold text-white">Retail Experience System</h3>
+                </div>
+              </div>
+            </div>
+            <div className="group relative overflow-hidden rounded-xl">
+              <img
+                src="https://images.pexels.com/photos/3183150/pexels-photo-3183150.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2"
+                alt="Commerce Innovation"
+                className="w-full h-72 object-cover transition-transform duration-700 group-hover:scale-105"
+              />
+              <div className="absolute inset-0 bg-gradient-to-t from-navy-900/90 to-transparent flex items-end p-8">
+                <div>
+                  <p className="text-secondary-400 text-sm font-semibold uppercase tracking-wider mb-2">Commerce Innovation</p>
+                  <h3 className="text-xl font-bold text-white">DTC Subscription Commerce Platform</h3>
+                </div>
+              </div>
+            </div>
+            <div className="group relative overflow-hidden rounded-xl">
+              <img
+                src="https://images.pexels.com/photos/3182812/pexels-photo-3182812.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2"
+                alt="Digital Platform"
+                className="w-full h-72 object-cover transition-transform duration-700 group-hover:scale-105"
+              />
+              <div className="absolute inset-0 bg-gradient-to-t from-navy-900/90 to-transparent flex items-end p-8">
+                <div>
+                  <p className="text-secondary-400 text-sm font-semibold uppercase tracking-wider mb-2">Digital Platform</p>
+                  <h3 className="text-xl font-bold text-white">Global Corporate Web Ecosystem</h3>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
       {/* CTA */}
       <section className="py-24 bg-gradient-to-r from-navy-900 to-black text-white">
         <div className="container-custom">

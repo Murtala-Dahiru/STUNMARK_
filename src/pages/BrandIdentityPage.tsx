@@ -224,13 +224,13 @@ const BrandIdentityPage = () => {
             <div className="group relative overflow-hidden rounded-xl">
               <img
                 src="https://images.pexels.com/photos/1779487/pexels-photo-1779487.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2"
-                alt="Brand System"
+                alt="Brand Architecture"
                 className="w-full h-72 object-cover transition-transform duration-700 group-hover:scale-105"
               />
               <div className="absolute inset-0 bg-gradient-to-t from-navy-900/90 to-transparent flex items-end p-8">
                 <div>
-                  <p className="text-accent-400 text-sm font-semibold uppercase tracking-wider mb-2">Brand System</p>
-                  <h3 className="text-xl font-bold text-white">Vertex: Complete Identity Overhaul</h3>
+                  <p className="text-accent-400 text-sm font-semibold uppercase tracking-wider mb-2">Brand Architecture</p>
+                  <h3 className="text-xl font-bold text-white">Global Brand Architecture System</h3>
                 </div>
               </div>
             </div>
@@ -243,33 +243,33 @@ const BrandIdentityPage = () => {
               <div className="absolute inset-0 bg-gradient-to-t from-navy-900/90 to-transparent flex items-end p-8">
                 <div>
                   <p className="text-accent-400 text-sm font-semibold uppercase tracking-wider mb-2">Design System</p>
-                  <h3 className="text-xl font-bold text-white">Lumina: Global Brand Guidelines</h3>
+                  <h3 className="text-xl font-bold text-white">Multi-Market Design System & Guidelines</h3>
                 </div>
               </div>
             </div>
             <div className="group relative overflow-hidden rounded-xl">
               <img
                 src="https://images.pexels.com/photos/196644/pexels-photo-196644.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2"
-                alt="Brand Refresh"
+                alt="Brand Evolution"
                 className="w-full h-72 object-cover transition-transform duration-700 group-hover:scale-105"
               />
               <div className="absolute inset-0 bg-gradient-to-t from-navy-900/90 to-transparent flex items-end p-8">
                 <div>
                   <p className="text-accent-400 text-sm font-semibold uppercase tracking-wider mb-2">Brand Evolution</p>
-                  <h3 className="text-xl font-bold text-white">Aurelia: Heritage Brand Refresh</h3>
+                  <h3 className="text-xl font-bold text-white">Heritage Brand Refresh Program</h3>
                 </div>
               </div>
             </div>
             <div className="group relative overflow-hidden rounded-xl">
               <img
                 src="https://images.pexels.com/photos/3184291/pexels-photo-3184291.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2"
-                alt="Packaging"
+                alt="Packaging System"
                 className="w-full h-72 object-cover transition-transform duration-700 group-hover:scale-105"
               />
               <div className="absolute inset-0 bg-gradient-to-t from-navy-900/90 to-transparent flex items-end p-8">
                 <div>
                   <p className="text-accent-400 text-sm font-semibold uppercase tracking-wider mb-2">Packaging System</p>
-                  <h3 className="text-xl font-bold text-white">Essence: Beauty Brand Identity</h3>
+                  <h3 className="text-xl font-bold text-white">Premium Consumer Packaging System</h3>
                 </div>
               </div>
             </div>
@@ -282,7 +282,20 @@ const BrandIdentityPage = () => {
               <div className="absolute inset-0 bg-gradient-to-t from-navy-900/90 to-transparent flex items-end p-8">
                 <div>
                   <p className="text-accent-400 text-sm font-semibold uppercase tracking-wider mb-2">Corporate Identity</p>
-                  <h3 className="text-xl font-bold text-white">Meridian: Financial Brand Architecture</h3>
+                  <h3 className="text-xl font-bold text-white">Institutional Repositioning Initiative</h3>
+                </div>
+              </div>
+            </div>
+            <div className="group relative overflow-hidden rounded-xl">
+              <img
+                src="https://images.pexels.com/photos/298842/pexels-photo-298842.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2"
+                alt="Visual Identity"
+                className="w-full h-72 object-cover transition-transform duration-700 group-hover:scale-105"
+              />
+              <div className="absolute inset-0 bg-gradient-to-t from-navy-900/90 to-transparent flex items-end p-8">
+                <div>
+                  <p className="text-accent-400 text-sm font-semibold uppercase tracking-wider mb-2">Visual Identity</p>
+                  <h3 className="text-xl font-bold text-white">Luxury Hospitality Identity System</h3>
                 </div>
               </div>
             </div>

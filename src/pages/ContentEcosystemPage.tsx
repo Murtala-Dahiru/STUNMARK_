@@ -223,6 +223,98 @@ const ContentEcosystemPage = () => {
         subtitle="We build content ecosystems for brands that understand attention is earned daily."
         variant="dark"
       />
+      {/* Selected Work */}
+      <section className="section bg-navy-900 text-white">
+        <div className="container-custom">
+          <SectionHeading
+            title="Selected Work"
+            subtitle="Compounding content engines and owned digital media platforms."
+            center={true}
+            lightMode={true}
+          />
+
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 mt-12">
+            <div className="group relative overflow-hidden rounded-xl">
+              <img
+                src="https://images.pexels.com/photos/5185116/pexels-photo-5185116.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2"
+                alt="Content Strategy"
+                className="w-full h-72 object-cover transition-transform duration-700 group-hover:scale-105"
+              />
+              <div className="absolute inset-0 bg-gradient-to-t from-navy-900/90 to-transparent flex items-end p-8">
+                <div>
+                  <p className="text-success-400 text-sm font-semibold uppercase tracking-wider mb-2">Content Strategy</p>
+                  <h3 className="text-xl font-bold text-white">Global Content Architecture Framework</h3>
+                </div>
+              </div>
+            </div>
+            <div className="group relative overflow-hidden rounded-xl">
+              <img
+                src="https://images.pexels.com/photos/6325984/pexels-photo-6325984.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2"
+                alt="Editorial Platform"
+                className="w-full h-72 object-cover transition-transform duration-700 group-hover:scale-105"
+              />
+              <div className="absolute inset-0 bg-gradient-to-t from-navy-900/90 to-transparent flex items-end p-8">
+                <div>
+                  <p className="text-success-400 text-sm font-semibold uppercase tracking-wider mb-2">Editorial Platform</p>
+                  <h3 className="text-xl font-bold text-white">Editorial Content Platform & Production Engine</h3>
+                </div>
+              </div>
+            </div>
+            <div className="group relative overflow-hidden rounded-xl">
+              <img
+                src="https://images.pexels.com/photos/3183197/pexels-photo-3183197.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2"
+                alt="Social Media Ecosystem"
+                className="w-full h-72 object-cover transition-transform duration-700 group-hover:scale-105"
+              />
+              <div className="absolute inset-0 bg-gradient-to-t from-navy-900/90 to-transparent flex items-end p-8">
+                <div>
+                  <p className="text-success-400 text-sm font-semibold uppercase tracking-wider mb-2">Social Media Ecosystem</p>
+                  <h3 className="text-xl font-bold text-white">Multi-Channel Brand Social System</h3>
+                </div>
+              </div>
+            </div>
+            <div className="group relative overflow-hidden rounded-xl">
+              <img
+                src="https://images.pexels.com/photos/6880158/pexels-photo-6880158.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2"
+                alt="Audio Series"
+                className="w-full h-72 object-cover transition-transform duration-700 group-hover:scale-105"
+              />
+              <div className="absolute inset-0 bg-gradient-to-t from-navy-900/90 to-transparent flex items-end p-8">
+                <div>
+                  <p className="text-success-400 text-sm font-semibold uppercase tracking-wider mb-2">Audio Series</p>
+                  <h3 className="text-xl font-bold text-white">Executive Thought Leadership Podcast</h3>
+                </div>
+              </div>
+            </div>
+            <div className="group relative overflow-hidden rounded-xl">
+              <img
+                src="https://images.pexels.com/photos/3182746/pexels-photo-3182746.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2"
+                alt="Channel Development"
+                className="w-full h-72 object-cover transition-transform duration-700 group-hover:scale-105"
+              />
+              <div className="absolute inset-0 bg-gradient-to-t from-navy-900/90 to-transparent flex items-end p-8">
+                <div>
+                  <p className="text-success-400 text-sm font-semibold uppercase tracking-wider mb-2">Channel Development</p>
+                  <h3 className="text-xl font-bold text-white">Owned Media Channel Strategy</h3>
+                </div>
+              </div>
+            </div>
+            <div className="group relative overflow-hidden rounded-xl">
+              <img
+                src="https://images.pexels.com/photos/4050291/pexels-photo-4050291.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2"
+                alt="Digital Media"
+                className="w-full h-72 object-cover transition-transform duration-700 group-hover:scale-105"
+              />
+              <div className="absolute inset-0 bg-gradient-to-t from-navy-900/90 to-transparent flex items-end p-8">
+                <div>
+                  <p className="text-success-400 text-sm font-semibold uppercase tracking-wider mb-2">Digital Media</p>
+                  <h3 className="text-xl font-bold text-white">Editorial Newsletter System</h3>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
 
       {/* CTA */}
       <section className="py-24 bg-gradient-to-r from-navy-900 to-black text-white">
