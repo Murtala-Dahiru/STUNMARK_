@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
 import Button from '../components/ui/Button';
 import { Send, Mail, Phone, MapPin, Check } from 'lucide-react';
+import { supabase } from '../lib/supabase';
 
 const helpOptions = [
   { group: 'Services', items: [
@@ -42,19 +43,53 @@ const ContactPage = () => {
     message: '',
   });
 
-  const [submitted, setSubmitted] = useState(false);
+  const [isSubmitting, setIsSubmitting] = useState(false);
+  const [submitError, setSubmitError] = useState<string | null>(null);
+  const [submitSuccess, setSubmitSuccess] = useState(false);
 
   const handleChange = (e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement | HTMLSelectElement>) => {
     const { name, value } = e.target;
     setFormState(prev => ({ ...prev, [name]: value }));
   };
 
-  const handleSubmit = (e: React.FormEvent) => {
+  const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault();
-    console.log('Form submitted:', formState);
-    setSubmitted(true);
-    setFormState({ name: '', email: '', company: '', service: '', message: '' });
-    setTimeout(() => { setSubmitted(false); }, 5000);
+    
+    // Validation: name, email, company, service, message are required
+    if (!formState.name || !formState.email || !formState.company || !formState.service || !formState.message) {
+      setSubmitError('All fields marked with * are required.');
+      return;
+    }
+
+    setIsSubmitting(true);
+    setSubmitError(null);
+    setSubmitSuccess(false);
+
+    try {
+      const { error } = await supabase
+        .from('contact_messages')
+        .insert([
+          {
+            name: formState.name,
+            email: formState.email,
+            company: formState.company,
+            service: formState.service,
+            message: formState.message,
+          },
+        ]);
+
+      if (error) {
+        throw error;
+      }
+
+      setSubmitSuccess(true);
+      setFormState({ name: '', email: '', company: '', service: '', message: '' });
+    } catch (err: any) {
+      console.error('Error submitting to Supabase:', err);
+      setSubmitError(err.message || 'Failed to send message. Please verify your connection and try again.');
+    } finally {
+      setIsSubmitting(false);
+    }
   };
 
   return (
@@ -92,16 +127,22 @@ const ContactPage = () => {
                 Tell us about your vision. Our team will respond within 24 hours with a clear perspective on how we can help.
               </p>
 
-              {submitted ? (
+              {submitSuccess ? (
                 <div className="bg-success-50 border border-success-200 text-success-800 px-8 py-10 rounded-xl mb-8 flex items-start">
                   <Check size={28} className="text-success-600 mr-4 mt-1 shrink-0" />
                   <div>
                     <h3 className="font-bold text-2xl mb-3">Project Brief Received</h3>
-                    <p className="text-lg">Thank you. Our creative team will be in touch within 24 hours to discuss your project with strategic clarity.</p>
+                    <p className="text-lg">Message received. We will respond shortly.</p>
                   </div>
                 </div>
               ) : (
                 <form onSubmit={handleSubmit} className="space-y-6">
+                  {submitError && (
+                    <div className="bg-red-50 border border-red-200 text-red-800 px-6 py-4 rounded-xl mb-6">
+                      <p className="text-sm font-medium">{submitError}</p>
+                    </div>
+                  )}
+
                   <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
                     <div>
                       <label htmlFor="name" className="block text-sm font-semibold text-gray-700 mb-2">Your Name *</label>
@@ -113,6 +154,7 @@ const ContactPage = () => {
                         onChange={handleChange}
                         className="w-full px-4 py-3.5 rounded-lg border border-gray-200 focus:outline-none focus:ring-2 focus:ring-primary-500 focus:border-transparent text-base transition-shadow duration-200 hover:shadow-sm"
                         required
+                        disabled={isSubmitting}
                       />
                     </div>
                     <div>
@@ -125,12 +167,13 @@ const ContactPage = () => {
                         onChange={handleChange}
                         className="w-full px-4 py-3.5 rounded-lg border border-gray-200 focus:outline-none focus:ring-2 focus:ring-primary-500 focus:border-transparent text-base transition-shadow duration-200 hover:shadow-sm"
                         required
+                        disabled={isSubmitting}
                       />
                     </div>
                   </div>
 
                   <div>
-                    <label htmlFor="company" className="block text-sm font-semibold text-gray-700 mb-2">Company Name</label>
+                    <label htmlFor="company" className="block text-sm font-semibold text-gray-700 mb-2">Company Name *</label>
                     <input
                       type="text"
                       id="company"
@@ -138,6 +181,8 @@ const ContactPage = () => {
                       value={formState.company}
                       onChange={handleChange}
                       className="w-full px-4 py-3.5 rounded-lg border border-gray-200 focus:outline-none focus:ring-2 focus:ring-primary-500 focus:border-transparent text-base transition-shadow duration-200 hover:shadow-sm"
+                      required
+                      disabled={isSubmitting}
                     />
                   </div>
 
@@ -150,6 +195,7 @@ const ContactPage = () => {
                       onChange={handleChange}
                       className="w-full px-4 py-3.5 rounded-lg border border-gray-200 focus:outline-none focus:ring-2 focus:ring-primary-500 focus:border-transparent appearance-none bg-white text-base transition-shadow duration-200 hover:shadow-sm"
                       required
+                      disabled={isSubmitting}
                     >
                       <option value="" disabled>Select an area</option>
                       {helpOptions.map((group) => (
@@ -173,6 +219,7 @@ const ContactPage = () => {
                       className="w-full px-4 py-3.5 rounded-lg border border-gray-200 focus:outline-none focus:ring-2 focus:ring-primary-500 focus:border-transparent text-base transition-shadow duration-200 hover:shadow-sm resize-none"
                       placeholder="Describe your brand challenge, creative vision, or growth goals..."
                       required
+                      disabled={isSubmitting}
                     ></textarea>
                   </div>
 
@@ -181,10 +228,20 @@ const ContactPage = () => {
                       type="submit"
                       variant="primary"
                       size="lg"
-                      className="!inline-flex w-full justify-center text-base py-4 font-bold transition-all duration-200 hover:shadow-lg"
+                      className="!inline-flex w-full justify-center text-base py-4 font-bold transition-all duration-200 hover:shadow-lg disabled:opacity-50 disabled:cursor-not-allowed"
+                      disabled={isSubmitting}
                     >
-                      <Send size={18} className="mr-2" />
-                      Submit Project Brief
+                      {isSubmitting ? (
+                        <>
+                          <div className="animate-spin rounded-full h-5 w-5 border-b-2 border-white mr-3"></div>
+                          Sending Brief...
+                        </>
+                      ) : (
+                        <>
+                          <Send size={18} className="mr-2" />
+                          Submit Project Brief
+                        </>
+                      )}
                     </Button>
                   </div>
                 </form>
