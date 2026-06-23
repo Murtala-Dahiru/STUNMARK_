@@ -114,9 +114,9 @@ const Header = () => {
             <img
               src="/IMG_1950.PNG"
               alt="Stunmark Logo"
-              className="h-[46px] sm:h-[52px] md:h-[56px] w-auto transition-all duration-300 group-hover:opacity-80"
+              className="h-[52px] sm:h-[58px] md:h-[64px] w-auto transition-all duration-300 group-hover:opacity-80"
             />
-            <span className={`text-lg sm:text-[20px] md:text-[22px] font-bold transition-all duration-300 leading-none tracking-tight ${
+            <span className={`text-xl sm:text-[22px] md:text-2xl font-bold transition-all duration-300 leading-none tracking-tight ${
               scrolled || isOpen ? 'text-navy-900' : 'text-white'
             } group-hover:tracking-wider`}>
               Stunmark
