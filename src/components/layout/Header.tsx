@@ -103,7 +103,7 @@ const Header = () => {
   return (
     <header
       className={`fixed w-full z-50 transition-all duration-500 ${
-        scrolled
+        scrolled || isOpen
           ? 'bg-white/90 backdrop-blur-xl shadow-[0_1px_0_0_rgba(0,0,0,0.06)] py-4'
           : 'bg-transparent py-7'
       }`}
@@ -114,10 +114,10 @@ const Header = () => {
             <img
               src="/IMG_1950.PNG"
               alt="Stunmark Logo"
-              className="h-10 sm:h-12 md:h-[50px] w-auto transition-all duration-300 group-hover:opacity-80"
+              className="h-[46px] sm:h-[52px] md:h-[56px] w-auto transition-all duration-300 group-hover:opacity-80"
             />
-            <span className={`text-base sm:text-lg md:text-xl font-bold transition-all duration-300 leading-none tracking-tight ${
-              scrolled ? 'text-navy-900' : 'text-white'
+            <span className={`text-lg sm:text-[20px] md:text-[22px] font-bold transition-all duration-300 leading-none tracking-tight ${
+              scrolled || isOpen ? 'text-navy-900' : 'text-white'
             } group-hover:tracking-wider`}>
               Stunmark
             </span>
@@ -200,7 +200,7 @@ const Header = () => {
           {/* Mobile menu button */}
           <button
             className={`lg:hidden p-2 rounded-md focus:outline-none transition-colors duration-300 ${
-              scrolled ? 'text-gray-700' : 'text-white'
+              scrolled || isOpen ? 'text-gray-700' : 'text-white'
             }`}
             onClick={toggleMenu}
           >
