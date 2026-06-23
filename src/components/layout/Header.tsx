@@ -114,7 +114,7 @@ const Header = () => {
             <img
               src="/IMG_1950.PNG"
               alt="Stunmark Logo"
-              className="h-[72px] sm:h-[84px] md:h-[96px] w-auto transition-all duration-300 group-hover:opacity-80"
+              className="h-[56px] sm:h-[64px] md:h-[72px] w-auto transition-all duration-300 group-hover:opacity-80"
             />
           </Link>
 
