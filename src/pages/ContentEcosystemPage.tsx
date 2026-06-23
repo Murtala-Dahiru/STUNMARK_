@@ -243,7 +243,7 @@ const ContentEcosystemPage = () => {
               <div className="absolute inset-0 bg-gradient-to-t from-navy-900/90 to-transparent flex items-end p-8">
                 <div>
                   <p className="text-success-400 text-sm font-semibold uppercase tracking-wider mb-2">Content Strategy</p>
-                  <h3 className="text-xl font-bold text-white">Global Content Architecture Framework</h3>
+                  <h3 className="text-xl font-bold text-white">Content Strategy & Architecture</h3>
                 </div>
               </div>
             </div>
@@ -256,7 +256,7 @@ const ContentEcosystemPage = () => {
               <div className="absolute inset-0 bg-gradient-to-t from-navy-900/90 to-transparent flex items-end p-8">
                 <div>
                   <p className="text-success-400 text-sm font-semibold uppercase tracking-wider mb-2">Editorial Platform</p>
-                  <h3 className="text-xl font-bold text-white">Editorial Content Platform & Production Engine</h3>
+                  <h3 className="text-xl font-bold text-white">Editorial Content Platform</h3>
                 </div>
               </div>
             </div>

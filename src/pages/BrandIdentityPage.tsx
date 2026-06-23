@@ -230,7 +230,7 @@ const BrandIdentityPage = () => {
               <div className="absolute inset-0 bg-gradient-to-t from-navy-900/90 to-transparent flex items-end p-8">
                 <div>
                   <p className="text-accent-400 text-sm font-semibold uppercase tracking-wider mb-2">Brand Architecture</p>
-                  <h3 className="text-xl font-bold text-white">Global Brand Architecture System</h3>
+                  <h3 className="text-xl font-bold text-white">Brand Architecture System</h3>
                 </div>
               </div>
             </div>
@@ -282,7 +282,7 @@ const BrandIdentityPage = () => {
               <div className="absolute inset-0 bg-gradient-to-t from-navy-900/90 to-transparent flex items-end p-8">
                 <div>
                   <p className="text-accent-400 text-sm font-semibold uppercase tracking-wider mb-2">Corporate Identity</p>
-                  <h3 className="text-xl font-bold text-white">Institutional Repositioning Initiative</h3>
+                  <h3 className="text-xl font-bold text-white">Brand Repositioning Program</h3>
                 </div>
               </div>
             </div>

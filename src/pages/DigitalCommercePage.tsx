@@ -338,7 +338,7 @@ const DigitalCommercePage = () => {
               <div className="absolute inset-0 bg-gradient-to-t from-navy-900/90 to-transparent flex items-end p-8">
                 <div>
                   <p className="text-secondary-400 text-sm font-semibold uppercase tracking-wider mb-2">Digital Platform</p>
-                  <h3 className="text-xl font-bold text-white">Global Corporate Web Ecosystem</h3>
+                  <h3 className="text-xl font-bold text-white">Corporate Web Platform</h3>
                 </div>
               </div>
             </div>
