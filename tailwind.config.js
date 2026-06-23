@@ -95,6 +95,7 @@ export default {
       },
       fontFamily: {
         sans: ['Inter', 'system-ui', 'sans-serif'],
+        alien: ['Alien Encounters', 'Syncopate', 'Orbitron', 'sans-serif'],
       },
       fontSize: {
         '2xs': '0.625rem',
