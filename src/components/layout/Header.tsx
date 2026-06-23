@@ -110,17 +110,12 @@ const Header = () => {
     >
       <div className="container-custom">
         <div className="flex items-center justify-between">
-          <Link to="/" className="flex items-center gap-3 group">
+          <Link to="/" className="flex items-center group">
             <img
               src="/IMG_1950.PNG"
               alt="Stunmark Logo"
-              className="h-[52px] sm:h-[58px] md:h-[64px] w-auto transition-all duration-300 group-hover:opacity-80"
+              className="h-[56px] sm:h-[64px] md:h-[72px] w-auto transition-all duration-300 group-hover:opacity-80"
             />
-            <span className={`text-xl sm:text-[22px] md:text-2xl font-bold transition-all duration-300 leading-none tracking-tight ${
-              scrolled || isOpen ? 'text-navy-900' : 'text-white'
-            } group-hover:tracking-wider`}>
-              Stunmark
-            </span>
           </Link>
 
           {/* Desktop Navigation */}
