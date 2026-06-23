@@ -40,7 +40,6 @@ const Header = () => {
   const [isOpen, setIsOpen] = useState(false);
   const [scrolled, setScrolled] = useState(false);
   const [servicesOpen, setServicesOpen] = useState(false);
-  const [mobileServicesOpen, setMobileServicesOpen] = useState(false);
   const location = useLocation();
   const servicesRef = useRef<HTMLDivElement>(null);
   const hoverTimeoutRef = useRef<ReturnType<typeof setTimeout> | null>(null);
@@ -52,7 +51,6 @@ const Header = () => {
   useEffect(() => {
     setIsOpen(false);
     setServicesOpen(false);
-    setMobileServicesOpen(false);
   }, [location]);
 
   useEffect(() => {
@@ -116,9 +114,9 @@ const Header = () => {
             <img
               src="/IMG_1950.PNG"
               alt="Stunmark Logo"
-              className="h-8 sm:h-9 md:h-11 w-auto transition-all duration-300 group-hover:opacity-80"
+              className="h-10 sm:h-12 md:h-[50px] w-auto transition-all duration-300 group-hover:opacity-80"
             />
-            <span className={`text-[15px] sm:text-base font-bold transition-all duration-300 leading-none tracking-tight ${
+            <span className={`text-base sm:text-lg md:text-xl font-bold transition-all duration-300 leading-none tracking-tight ${
               scrolled ? 'text-navy-900' : 'text-white'
             } group-hover:tracking-wider`}>
               Stunmark
@@ -220,40 +218,36 @@ const Header = () => {
         }`}
       >
         <div className="container mx-auto px-4 flex flex-col space-y-1">
-          {/* Services - expandable */}
+          {/* Services - always expanded on mobile */}
           <div>
             <NavLink
               to="/services"
-              onClick={() => setMobileServicesOpen(!mobileServicesOpen)}
               className={({ isActive }) =>
-                `flex items-center justify-between py-3 px-4 text-sm font-semibold tracking-wide uppercase rounded-lg transition-colors ${
+                `flex items-center py-3 px-4 text-sm font-semibold tracking-wide uppercase rounded-lg transition-colors ${
                   isActive
                     ? 'text-primary-600 bg-primary-50'
                     : 'text-gray-800 hover:text-primary-600 hover:bg-gray-50'
                 }`
               }
             >
-              <span>Services</span>
-              <ChevronDown size={14} className={`transition-transform duration-200 ${mobileServicesOpen ? 'rotate-180' : ''}`} />
+              Services
             </NavLink>
-            {mobileServicesOpen && (
-              <div className="pl-4 space-y-0.5 mt-1">
-                {serviceLinks.map((link) => (
-                  <NavLink
-                    key={link.to}
-                    to={link.to}
-                    className={({ isActive }) =>
-                      `flex items-center py-2.5 px-4 text-sm rounded-lg transition-colors ${
-                        isActive ? 'text-primary-600 bg-primary-50 font-semibold' : 'text-gray-600 hover:text-primary-600'
-                      }`
-                    }
-                  >
-                    <span className="mr-3 text-primary-400">{link.icon}</span>
-                    {link.label}
-                  </NavLink>
-                ))}
-              </div>
-            )}
+            <div className="pl-4 space-y-0.5 mt-1">
+              {serviceLinks.map((link) => (
+                <NavLink
+                  key={link.to}
+                  to={link.to}
+                  className={({ isActive }) =>
+                    `flex items-center py-2.5 px-4 text-sm rounded-lg transition-colors ${
+                      isActive ? 'text-primary-600 bg-primary-50 font-semibold' : 'text-gray-600 hover:text-primary-600'
+                    }`
+                  }
+                >
+                  <span className="mr-3 text-primary-400">{link.icon}</span>
+                  {link.label}
+                </NavLink>
+              ))}
+            </div>
           </div>
 
           <NavLink to="/approach" className={({ isActive }) =>
