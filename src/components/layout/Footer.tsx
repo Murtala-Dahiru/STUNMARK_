@@ -18,16 +18,16 @@ const Footer = () => {
               A creative and growth company that designs brands, crafts stories, builds digital experiences, and engineers growth. Interconnected creative systems built to scale.
             </p>
             <div className="flex space-x-4">
-              <a href="https://linkedin.com" className="text-gray-300 hover:text-primary-400 transition-colors">
+              <a href="https://www.linkedin.com/company/stunmarkhq" target="_blank" rel="noopener noreferrer" className="text-gray-300 hover:text-primary-400 transition-colors">
                 <Linkedin size={20} />
               </a>
-              <a href="https://twitter.com" className="text-gray-300 hover:text-primary-400 transition-colors">
+              <a href="https://x.com/StunmarkHQ" target="_blank" rel="noopener noreferrer" className="text-gray-300 hover:text-primary-400 transition-colors">
                 <Twitter size={20} />
               </a>
-              <a href="https://instagram.com" className="text-gray-300 hover:text-primary-400 transition-colors">
+              <a href="https://www.instagram.com/stunmark.hq?igsh=eWdpcTJmbWFnbndl" target="_blank" rel="noopener noreferrer" className="text-gray-300 hover:text-primary-400 transition-colors">
                 <Instagram size={20} />
               </a>
-              <a href="https://facebook.com" className="text-gray-300 hover:text-primary-400 transition-colors">
+              <a href="https://www.facebook.com/share/1EuAtihwLL/" target="_blank" rel="noopener noreferrer" className="text-gray-300 hover:text-primary-400 transition-colors">
                 <Facebook size={20} />
               </a>
             </div>
