@@ -136,11 +136,11 @@ const AboutPage = () => {
         <div className="container-custom">
           <div className="grid grid-cols-2 md:grid-cols-4 gap-8">
             <div className="text-center">
-              <div className="text-4xl md:text-5xl font-bold text-navy-900 mb-2">150+</div>
+              <div className="text-4xl md:text-5xl font-bold text-navy-900 mb-2">30+</div>
               <div className="text-gray-600 font-medium">Projects Delivered</div>
             </div>
             <div className="text-center">
-              <div className="text-4xl md:text-5xl font-bold text-navy-900 mb-2">28</div>
+              <div className="text-4xl md:text-5xl font-bold text-navy-900 mb-2">3+</div>
               <div className="text-gray-600 font-medium">Countries Reached</div>
             </div>
             <div className="text-center">
